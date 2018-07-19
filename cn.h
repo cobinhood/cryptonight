@@ -3,6 +3,6 @@
 
 #include <unistd.h>
 
-void cn_slow_hash(const void * pptr, size_t dlen, char * h);
+void cn_slow_hash(const void * pptr, size_t dlen, char * h, int variant, int prehashed);
 
 #endif

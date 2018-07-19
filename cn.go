@@ -14,7 +14,7 @@ func SlowHash(d []byte) []byte {
 	}
 	var cr [32]C.char
 	bptr := unsafe.Pointer(&b[0])
-	C.cn_slow_hash(bptr, C.size_t(l), &cr[0])
+	C.cn_slow_hash(bptr, C.size_t(l), &cr[0], 0, 0)
 	r := make([]byte, 32)
 	for i, c := range cr {
 		r[i] = byte(c)
