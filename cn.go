@@ -1,6 +1,6 @@
 package cryptonight
 
-// #cgo CFLAGS: -march=native
+// #cgo CFLAGS: -march=ivybridge
 // #include "cn.h"
 import "C"
 import "unsafe"
